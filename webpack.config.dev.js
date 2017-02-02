@@ -1,7 +1,10 @@
+const path = require('path');
+const webpack = require('webpack');
+
 module.exports = {
-  entry: './src/index.js',
+  entry: ['./src/index.js'],
   output: {
-    path: "./dist",
+    path: path.join(__dirname, './dist'),
     filename: 'bundle.js'
   },
   // eval-source-map is faster for development
@@ -15,5 +18,8 @@ module.exports = {
       },
       { test: /\.vue$/, loader: 'vue' },
     ]
-  }
-}
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
+};
