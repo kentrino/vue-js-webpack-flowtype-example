@@ -8,6 +8,7 @@
   <div>
     <router-link to="/pageA">Page A</router-link><br />
     <router-link to="/pageB">Page B</router-link><br />
+    <router-link to="/test">test</router-link><br />
     <router-view></router-view>
   </div>
 </template>

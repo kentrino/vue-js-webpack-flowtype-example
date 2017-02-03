@@ -5,6 +5,7 @@
   ],
   "plugins": [
     "transform-flow-strip-types",
+    "transform-vue-jsx",
     "transform-runtime"
   ]
 }

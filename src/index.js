@@ -4,6 +4,7 @@ Vue.use(VueRouter);
 import App from './component/app.vue';
 import pageA from './component/pageA.vue';
 import pageB from './component/pageB.vue';
+import test from './component/test';
 
 const routes = [
   {
@@ -13,6 +14,10 @@ const routes = [
   {
     path: '/pageB',
     component: pageB
+  },
+  {
+    path: '/Test',
+    component: test
   }
 ];
 

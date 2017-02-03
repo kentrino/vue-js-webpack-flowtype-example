@@ -9,10 +9,14 @@ module.exports = {
   },
   // eval-source-map is faster for development
   devtool: '#eval-source-map',
+  resolve: {
+    root: path.join(__dirname, 'src'),
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     loaders: [
       {
-        test: /\.js/,
+        test: /\.jsx?$/,
         loaders: ['babel'],
         exclude: [/node_modules/]
       },
