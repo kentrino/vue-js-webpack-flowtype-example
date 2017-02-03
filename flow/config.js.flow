@@ -1,0 +1,19 @@
+declare type Config = {
+  // user
+  optionMergeStrategies: { [key: string]: Function };
+  silent: boolean;
+  devtools: boolean;
+  errorHandler: ?Function;
+  ignoredElements: Array<string>;
+  keyCodes: { [key: string]: number };
+  // platform
+  isReservedTag: (x?: string) => boolean;
+  parsePlatformTagName: (x: string) => string;
+  isUnknownElement: (x?: string) => boolean;
+  getTagNamespace: (x?: string) => string | void;
+  mustUseProp: (tag: string, type: ?string, name: string) => boolean;
+  // internal
+  //_assetTypes: Array<string>;
+  //_lifecycleHooks: Array<string>;
+  //_maxUpdateCount: number;
+};
