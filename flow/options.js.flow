@@ -1,6 +1,6 @@
 declare type ComponentOptions = {
   // data
-  data: Object | Function | void;
+  data?: Object | Function;
   props?: { [key: string]: PropOptions };
   propsData?: ?Object;
   computed?: {
