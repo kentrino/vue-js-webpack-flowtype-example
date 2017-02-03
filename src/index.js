@@ -1,29 +1,10 @@
-const Vue = require('vue');
-const VueRouter = require('vue-router');
-Vue.use(VueRouter);
+import Vue from 'vue';
+import Router from 'vue-router';
+
 import App from './component/app.vue';
-import pageA from './component/pageA.vue';
-import pageB from './component/pageB.vue';
-import test from './component/test';
+import router from './router/index';
 
-const routes = [
-  {
-    path: '/pageA',
-    component: pageA
-  },
-  {
-    path: '/pageB',
-    component: pageB
-  },
-  {
-    path: '/Test',
-    component: test
-  }
-];
-
-const router = new VueRouter({
-  routes: routes
-});
+Vue.use(Router);
 
 new Vue({
   router,
